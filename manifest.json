@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Reader",
+  "version": "1.0",
+  "description": "Highlight text on any page, navigate questions on ChatGPT & Gemini",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["gemini.js"]
+    },
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["chatgpt.js"]
+    }
+  ]
+}

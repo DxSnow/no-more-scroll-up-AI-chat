@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #1a1a1a;
+        color: #e0e0e0;
+        padding: 16px;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #fff;
+        border-bottom: 1px solid #333;
+        padding-bottom: 12px;
+      }
+      .feature {
+        margin-bottom: 16px;
+        padding: 12px;
+        background: #252525;
+        border-radius: 8px;
+        border-left: 3px solid #10a37f;
+      }
+      .feature-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #10a37f;
+        margin-bottom: 6px;
+      }
+      .feature-desc {
+        font-size: 12px;
+        color: #aaa;
+        line-height: 1.5;
+      }
+      .shortcut {
+        display: inline-block;
+        background: #333;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 11px;
+        color: #fff;
+      }
+      .sites {
+        font-size: 11px;
+        color: #888;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid #333;
+      }
+      .sites span {
+        display: inline-block;
+        background: #2d2d2d;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin: 2px 4px 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Smart Reader</h1>
+
+    <div class="feature">
+      <div class="feature-title">Text Highlighter</div>
+      <div class="feature-desc">
+        Hold <span class="shortcut">Alt</span> (or <span class="shortcut">Option</span> on Mac) and select text to highlight it in yellow. Select highlighted text with Alt to remove it.
+        <br><br>
+        Highlights are saved and persist across page visits.
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-title">Question Navigator</div>
+      <div class="feature-desc">
+        Click the <span class="shortcut">clipboard icon</span> on ChatGPT or Gemini to see a list of all your questions. Click any question to jump directly to it.
+      </div>
+    </div>
+
+    <div class="sites">
+      <strong>Supported sites:</strong><br>
+      <span>All websites</span> (highlighter)
+      <span>ChatGPT</span>
+      <span>Gemini</span>
+    </div>
+  </body>
+</html>
