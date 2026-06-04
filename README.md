@@ -1,4 +1,4 @@
-# ChatJumpo
+# ChatJump
 
 A Chrome extension that saves you from endless scrolling in AI chat conversations.
 
@@ -10,7 +10,7 @@ AI conversations get long fast. AI responses are often paragraphs or pages of te
 
 ## The Solution
 
-ChatJumpo adds a sidebar that lists all your questions in the conversation. Click any question to instantly jump to it. No more scrolling.
+ChatJump adds a sidebar that lists all your questions in the conversation. Click any question to instantly jump to it. No more scrolling.
 
 **Features:**
 - **Question Navigator** - See all your questions in a clean sidebar
