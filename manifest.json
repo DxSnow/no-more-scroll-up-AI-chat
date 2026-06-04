@@ -1,28 +1,51 @@
 {
   "manifest_version": 3,
-  "name": "Smart Reader",
+  "name": "ChatJump",
   "version": "1.0",
-  "description": "Highlight text on any page, navigate questions on ChatGPT & Gemini",
+  "description": "Jump to any question in your AI chat conversations instantly",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "permissions": [
     "scripting",
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "gemini.js"
+      ]
     },
     {
-      "matches": ["https://gemini.google.com/*"],
-      "js": ["gemini.js"]
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "chatgpt.js"
+      ]
     },
     {
-      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
-      "js": ["chatgpt.js"]
+      "matches": [
+        "https://deepseek.com/*",
+        "https://chat.deepseek.com/*"
+      ],
+      "js": [
+        "deepseek.js"
+      ]
     }
   ]
 }

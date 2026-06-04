@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <!-- Gradient background - purple to pink to orange -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="50%" style="stop-color:#EC4899"/>
+      <stop offset="100%" style="stop-color:#F97316"/>
+    </linearGradient>
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded square -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)"/>
+
+  <!-- AI response bubble (left, translucent) -->
+  <rect x="18" y="52" width="52" height="18" rx="9" fill="rgba(255,255,255,0.25)"/>
+
+  <!-- Second user input bubble (right, bright white, no arrow) -->
+  <rect x="58" y="84" width="52" height="18" rx="9" fill="white" filter="url(#glow)"/>
+
+  <!-- Arrow pointing right to user input -->
+  <line x1="20" y1="27" x2="48" y2="27" stroke="white" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- Arrow head pointing right -->
+  <polygon points="50,27 42,20 42,34" fill="white" filter="url(#glow)"/>
+
+  <!-- User bubble (right, bright white) -->
+  <rect x="58" y="18" width="52" height="18" rx="9" fill="white" filter="url(#glow)"/>
+</svg>
