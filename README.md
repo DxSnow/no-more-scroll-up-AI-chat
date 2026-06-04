@@ -10,7 +10,7 @@ AI conversations get long fast. AI responses are often paragraphs or pages of te
 
 ## The Solution
 
-ChatJump adds a sidebar that lists all your questions in the conversation. Click any question to instantly jump to it. No more scrolling.
+ChatJump adds a discreet floating button that expands into a sidebar listing all your questions in the conversation. Click any question to instantly jump to it. No more scrolling.
 
 **Features:**
 - **Question Navigator** - See all your questions in a clean sidebar
